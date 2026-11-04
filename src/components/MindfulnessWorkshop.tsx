@@ -15,6 +15,14 @@ const MindfulnessWorkshop = ({ workshop }: { workshop: Workshop }) => {
           </div>
         </section>
         <section className="section"><div className="wrap workshop-content"><div><p className="kicker">במפגש</p><h2>מה נעשה יחד?</h2><ul className="points">{workshop.points.map((point) => <li key={point}>{point}</li>)}</ul><strong>אין צורך בניסיון קודם במדיטציה או במיינדפולנס.</strong></div></div></section>
+        {"sections" in workshop && workshop.sections.map((section) => (
+          <section className="section" key={section.title}>
+            <div className="wrap workshop-content">
+              <h2>{section.title}</h2>
+              <p className="lead">{section.text}</p>
+            </div>
+          </section>
+        ))}
         <section className="section soft"><div className="wrap about"><img className="photo round" src="/amit-portrait.png" alt="עמית בירן" /><div><p className="kicker">מי מנחה?</p><h2>עמית בירן</h2><p className="lead">מורה מוסמך לדהרמה בדרך הזן ומנחה מוסמך למדיטציה ומיינדפולנס. מתרגל מעל עשור. אני מגיע מעולם ההייטק ומכיר היטב את הלחצים ואת האתגר שבשילוב מיינדפולנס בחיי היום יום.</p></div></div></section>
         <section className="section center"><div className="wrap"><h2>רוצים להצטרף?</h2><p className="lead join-details">{workshop.date} · {workshop.time}<br />{workshop.location}<br /><strong>מחיר: {workshop.price}</strong></p><a className="btn" target="_blank" rel="noreferrer" href={registrationUrl}>הרשמה בוואטסאפ</a></div></section>
       </main>
