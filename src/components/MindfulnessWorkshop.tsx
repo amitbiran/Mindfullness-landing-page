@@ -1,7 +1,10 @@
+import IntuitionWorkshop from "./IntuitionWorkshop";
 import { Link } from "react-router-dom";
 import { whatsappUrl, type Workshop } from "../content/siteContent";
 
 const MindfulnessWorkshop = ({ workshop }: { workshop: Workshop }) => {
+  if (workshop.id === "intuition") return <IntuitionWorkshop workshop={workshop} />;
+
   const registrationUrl = whatsappUrl(`היי עמית, אשמח להירשם לסדנת ${workshop.shortTitle} בתאריך ${workshop.date}.`);
 
   return (
