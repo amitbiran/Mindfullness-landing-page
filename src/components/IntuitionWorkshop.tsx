@@ -19,7 +19,7 @@ export default function IntuitionWorkshop({ workshop }: { workshop: Workshop }) 
       <img className="iw-logo" src="/logo.png" alt="סדנת זן ומיינדפולנס" />
       <h1>סדנת זן ומיינדפולנס</h1>
       <p className="iw-subtitle">להתחבר לאינטואיציה</p>
-      <p className="iw-description">3 שעות של תרגול ולימוד מיינדפולנס וזן</p>
+      <p className="iw-description">3 שעות של מיינדפולנס וזן עם הרבה תרגול פרקטי</p>
       <p className="iw-promise">להקשיב למה שחשוב לי, ולמצוא את האומץ לתת לו מקום.</p>
       <div className="iw-meta"><p>{workshop.date} | {workshop.time}</p><p>נס ציונה | קבוצה קטנה ואינטימית</p><p>מחיר: {workshop.price}</p></div>
       {button}
@@ -33,9 +33,9 @@ export default function IntuitionWorkshop({ workshop }: { workshop: Workshop }) 
       <div className="iw-narrow iw-possibility"><h3>אפשר לפגוש את עצמנו אחרת</h3><p>אפשר לתת מקום לאינטואיציה שלנו, לקול הזה שאומר: ״זה מעניין אותי״, ״זה מדליק אותי״.</p><p>אבל חלקנו כבר למדנו להתעלם ממנו.</p></div>
     </div></section>
 
-    <section className="iw-section"><div className="iw-narrow"><h2>אז מה נעשה בסדנה?</h2><p>נשלב מדיטציה, נשימה, תנועה קשובה, תרגול בזוגות ושיח. נחקור ריקות דרך תרגול של ״לא־יודע״, ונניח לרגע תפקידים, הגדרות ודעות שאנחנו מחזיקים על עצמנו.</p><ul className="iw-points">{['מה באמת מניע אותי — ומה מדליק בי עניין?', 'אילו קולות מצמצמים את מה שאני מרשה לעצמי לרצות?', 'איך מרגישה ההקשבה לקול הפנימי שלי?', 'מה חשוב לי, ואיך אני נותן לזה מקום בחיים?'].map(item => <li key={item}>{item}</li>)}</ul></div></section>
+    <section className="iw-section"><div className="iw-narrow"><h2>אז מה נעשה בסדנה?</h2><p>הסדנה תשלב הרבה תרגול פרקטי: מדיטציה, נשימה, תנועה קשובה ותרגול בזוגות, לצד שיח וחקירה. נחקור ריקות דרך תרגול של ״לא־יודע״, ונניח לרגע תפקידים, הגדרות ודעות שאנחנו מחזיקים על עצמנו.</p><ul className="iw-points">{['מה באמת מניע אותי ומה מדליק בי עניין?', 'אילו קולות מצמצמים את מה שאני מרשה לעצמי לרצות?', 'איך מרגישה ההקשבה לקול הפנימי שלי?', 'מה חשוב לי, ואיך אני נותן לזה מקום בחיים?'].map(item => <li key={item}>{item}</li>)}</ul></div></section>
 
-    <section className="iw-section iw-soft"><div className="iw-narrow"><h2>מה אני רוצה שתיקחו מהמפגש?</h2><ul className="iw-points">{['כלים פשוטים ליצירת מרחב מול מחשבות וביקורת עצמית.', 'היכרות קרובה יותר עם מה שמסקרן ומניע אתכם.', 'יותר חופש לפגוש את עצמכם מעבר להגדרות המוכרות.', 'צעד קטן שנותן מקום למשהו שחשוב לכם.'].map(item => <li key={item}>{item}</li>)}</ul><p className="iw-emphasis">לא חייבים לצאת עם תשובה גדולה על הייעוד בחיים. אפשר להתחיל ב״זה חשוב לי״ — ובקצת יותר אומץ להקשיב לזה.</p></div></section>
+    <section className="iw-section iw-soft"><div className="iw-narrow"><h2>מה אני רוצה שתיקחו מהמפגש?</h2><ul className="iw-points">{['כלים פשוטים ליצירת מרחב מול מחשבות וביקורת עצמית.', 'היכרות קרובה יותר עם מה שמסקרן ומניע אתכם.', 'יותר חופש לפגוש את עצמכם מעבר להגדרות המוכרות.', 'צעד קטן שנותן מקום למשהו שחשוב לכם.'].map(item => <li key={item}>{item}</li>)}</ul><p className="iw-emphasis">לא חייבים לצאת עם תשובה גדולה על הייעוד בחיים. אפשר להתחיל ב״זה חשוב לי״, ובקצת יותר אומץ להקשיב לזה.</p></div></section>
 
     <section className="iw-section"><div className="iw-narrow"><h2>למי הסדנה מתאימה?</h2><ul className="iw-points">{['למי שמרגיש קצת מנותק מהעשייה שלו ורוצה לפגוש מחדש עניין ומשמעות.', 'למי שנמצא בצומת או רוצה לבדוק כיוון שמושך אותו.', 'למי שמזהה שהוא מכבה רצונות ורעיונות לפני שנתן להם הזדמנות.', 'ולמי שרוצה לעצור לכמה שעות, לתרגל ולהקשיב למה שקורה בפנים.'].map(item => <li key={item}>{item}</li>)}</ul><p className="iw-center iw-emphasis">אין צורך בניסיון קודם במיינדפולנס או במדיטציה.</p></div></section>
 
